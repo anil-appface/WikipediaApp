@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XRS-u3-Hux">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wikipedia-->
+        <scene sceneID="Qso-73-Xrs">
+            <objects>
+                <tableViewController id="e9e-N9-jkR" customClass="WikiSearchTableViewController" customModule="Wikipedia_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uhj-hz-v3X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="WikiSearchTableCellIdentifier" rowHeight="112" id="XEG-4d-KXp" customClass="WikiSearchTableCell" customModule="Wikipedia_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="112"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XEG-4d-KXp" id="QGr-T2-NUM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgG-4X-rfP" userLabel="Container View">
+                                            <rect key="frame" x="8" y="4" width="359" height="104"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WikiPlaceholderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sAD-uV-080">
+                                                    <rect key="frame" x="8" y="12" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="VvU-QJ-GCU"/>
+                                                        <constraint firstAttribute="width" secondItem="sAD-uV-080" secondAttribute="height" multiplier="1:1" id="We4-wB-0fA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN5-xq-hFC">
+                                                    <rect key="frame" x="96" y="8" width="255" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ri-rZ-YKg">
+                                                    <rect key="frame" x="96" y="36.5" width="255" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2Ri-rZ-YKg" firstAttribute="top" secondItem="HN5-xq-hFC" secondAttribute="bottom" constant="8" id="3JI-vz-zxM"/>
+                                                <constraint firstItem="sAD-uV-080" firstAttribute="centerY" secondItem="OgG-4X-rfP" secondAttribute="centerY" id="6as-vb-VPI"/>
+                                                <constraint firstItem="2Ri-rZ-YKg" firstAttribute="trailing" secondItem="HN5-xq-hFC" secondAttribute="trailing" id="9Ar-6U-n8O"/>
+                                                <constraint firstItem="HN5-xq-hFC" firstAttribute="leading" secondItem="sAD-uV-080" secondAttribute="trailing" constant="8" id="EOo-bu-BTd"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Ri-rZ-YKg" secondAttribute="bottom" constant="8" id="FDB-pC-2oy"/>
+                                                <constraint firstAttribute="trailing" secondItem="HN5-xq-hFC" secondAttribute="trailing" constant="8" id="JDF-6p-6l3"/>
+                                                <constraint firstItem="sAD-uV-080" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OgG-4X-rfP" secondAttribute="top" constant="8" id="Zf7-Co-KYD"/>
+                                                <constraint firstItem="sAD-uV-080" firstAttribute="leading" secondItem="OgG-4X-rfP" secondAttribute="leading" constant="8" id="cY0-bV-Ts1"/>
+                                                <constraint firstItem="2Ri-rZ-YKg" firstAttribute="leading" secondItem="HN5-xq-hFC" secondAttribute="leading" id="daV-Wd-WHn"/>
+                                                <constraint firstItem="HN5-xq-hFC" firstAttribute="top" secondItem="OgG-4X-rfP" secondAttribute="top" constant="8" id="wmJ-WI-fVh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="showShadowWithCornerRadius" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="OgG-4X-rfP" secondAttribute="trailing" constant="8" id="Aeo-bg-0Rw"/>
+                                        <constraint firstItem="OgG-4X-rfP" firstAttribute="top" secondItem="QGr-T2-NUM" secondAttribute="top" constant="4" id="LDQ-Vx-AnJ"/>
+                                        <constraint firstItem="OgG-4X-rfP" firstAttribute="leading" secondItem="QGr-T2-NUM" secondAttribute="leading" constant="8" id="QoU-Cr-cPh"/>
+                                        <constraint firstAttribute="bottom" secondItem="OgG-4X-rfP" secondAttribute="bottom" constant="4" id="SAf-YU-GYJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="containerView" destination="OgG-4X-rfP" id="om7-2C-5Mf"/>
+                                    <outlet property="descriptionLabel" destination="2Ri-rZ-YKg" id="OKC-oj-hat"/>
+                                    <outlet property="thumbnailImageView" destination="sAD-uV-080" id="syR-EF-TD6"/>
+                                    <outlet property="titleLabel" destination="HN5-xq-hFC" id="tpP-xh-ZJK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e9e-N9-jkR" id="lvc-Cf-gk0"/>
+                            <outlet property="delegate" destination="e9e-N9-jkR" id="opG-cr-ZGQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Wikipedia" id="GxE-K3-uqH"/>
+                    <connections>
+                        <segue destination="TRG-F8-B03" kind="show" identifier="detailSegue" id="WlA-kf-yEt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95o-ra-cnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661.60000000000002" y="201.94902548725639"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="hNw-Ov-ASh">
+            <objects>
+                <viewController title="Details" id="TRG-F8-B03" customClass="WikiDetailViewController" customModule="Wikipedia_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RMD-fU-JE2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-T9-wBs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3O1-T9-wBs" firstAttribute="leading" secondItem="t8j-eZ-Ktl" secondAttribute="leading" id="7sC-L8-7hF"/>
+                            <constraint firstItem="3O1-T9-wBs" firstAttribute="top" secondItem="t8j-eZ-Ktl" secondAttribute="top" id="aEX-8n-3Rm"/>
+                            <constraint firstItem="t8j-eZ-Ktl" firstAttribute="bottom" secondItem="3O1-T9-wBs" secondAttribute="bottom" id="eeF-Kz-QzV"/>
+                            <constraint firstItem="3O1-T9-wBs" firstAttribute="trailing" secondItem="t8j-eZ-Ktl" secondAttribute="trailing" id="sRu-oj-P0r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t8j-eZ-Ktl"/>
+                    </view>
+                    <connections>
+                        <outlet property="wkWebView" destination="3O1-T9-wBs" id="ioj-Lg-z77"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8u-8C-B3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="201.94902548725639"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OyL-bi-QMP">
+            <objects>
+                <navigationController id="XRS-u3-Hux" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="59J-hR-dhR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="e9e-N9-jkR" kind="relationship" relationship="rootViewController" id="4dj-3t-eeK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys0-yy-DSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289" y="202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WikiPlaceholderIcon" width="800" height="800"/>
+    </resources>
+</document>

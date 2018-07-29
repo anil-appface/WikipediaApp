@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E731DA6210B06F40032E57C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DA5210B06F40032E57C /* AppDelegate.swift */; };
+		9E731DAB210B06F40032E57C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E731DA9210B06F40032E57C /* Main.storyboard */; };
+		9E731DAD210B06F40032E57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E731DAC210B06F40032E57C /* Assets.xcassets */; };
+		9E731DB0210B06F40032E57C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E731DAE210B06F40032E57C /* LaunchScreen.storyboard */; };
+		9E731DBD210B18B70032E57C /* WikiSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DBC210B18B70032E57C /* WikiSearchTableViewController.swift */; };
+		9E731DBF210B197C0032E57C /* MTNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DBE210B197C0032E57C /* MTNetworkHelper.swift */; };
+		9E731DC2210B1A300032E57C /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DC1210B1A300032E57C /* UIView-Extension.swift */; };
+		9E731DC4210B1A8D0032E57C /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DC3210B1A8D0032E57C /* UIViewController-Extension.swift */; };
+		9E731DC6210B1AB50032E57C /* MTCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DC5210B1AB50032E57C /* MTCoreDataManager.swift */; };
+		9E731DC8210B1AE70032E57C /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DC7210B1AE70032E57C /* GlobalConstants.swift */; };
+		9E731DCB210B287E0032E57C /* MTSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DCA210B287E0032E57C /* MTSearchResult.swift */; };
+		9E731DCD210B29010032E57C /* MTSyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DCC210B29010032E57C /* MTSyncEngine.swift */; };
+		9E731DD0210B32930032E57C /* MTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DCE210B32930032E57C /* MTModel.xcdatamodeld */; };
+		9E731DD2210B35500032E57C /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DD1210B35500032E57C /* UIApplication-Extension.swift */; };
+		9E731DD4210B41990032E57C /* MTBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DD3210B41990032E57C /* MTBaseTableViewController.swift */; };
+		9E731DD5210B42E70032E57C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E731DB1210B06F40032E57C /* Info.plist */; };
+		9E731DD7210B48EB0032E57C /* NSManagedObjectContext-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DD6210B48EB0032E57C /* NSManagedObjectContext-Extension.swift */; };
+		9E731DD9210B49490032E57C /* MTWikiSearchResultEntity-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DD8210B49490032E57C /* MTWikiSearchResultEntity-Extension.swift */; };
+		9E731DDB210C560D0032E57C /* UIImageView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DDA210C560D0032E57C /* UIImageView-Extension.swift */; };
+		9E731DDD210C65560032E57C /* WikiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DDC210C65560032E57C /* WikiDetailViewController.swift */; };
+		9E731DDF210C86CE0032E57C /* MTDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731DDE210C86CE0032E57C /* MTDataManager.swift */; };
+		DD4A178BDD6827269B3AC5C7 /* Pods_Wikipedia_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50DF4C37C09ACF39C7C1C58 /* Pods_Wikipedia_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		356A4A9E2E998B07DF635747 /* Pods-Wikipedia App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wikipedia App/Pods-Wikipedia App.debug.xcconfig"; sourceTree = "<group>"; };
+		9E731DA2210B06F40032E57C /* Wikipedia App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wikipedia App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E731DA5210B06F40032E57C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E731DAA210B06F40032E57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E731DAC210B06F40032E57C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E731DAF210B06F40032E57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E731DB1210B06F40032E57C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E731DBC210B18B70032E57C /* WikiSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSearchTableViewController.swift; sourceTree = "<group>"; };
+		9E731DBE210B197C0032E57C /* MTNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTNetworkHelper.swift; sourceTree = "<group>"; };
+		9E731DC1210B1A300032E57C /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		9E731DC3210B1A8D0032E57C /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		9E731DC5210B1AB50032E57C /* MTCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCoreDataManager.swift; sourceTree = "<group>"; };
+		9E731DC7210B1AE70032E57C /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		9E731DCA210B287E0032E57C /* MTSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSearchResult.swift; sourceTree = "<group>"; };
+		9E731DCC210B29010032E57C /* MTSyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSyncEngine.swift; sourceTree = "<group>"; };
+		9E731DCF210B32930032E57C /* MTModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTModel.xcdatamodel; sourceTree = "<group>"; };
+		9E731DD1210B35500032E57C /* UIApplication-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication-Extension.swift"; sourceTree = "<group>"; };
+		9E731DD3210B41990032E57C /* MTBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTBaseTableViewController.swift; sourceTree = "<group>"; };
+		9E731DD6210B48EB0032E57C /* NSManagedObjectContext-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext-Extension.swift"; sourceTree = "<group>"; };
+		9E731DD8210B49490032E57C /* MTWikiSearchResultEntity-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTWikiSearchResultEntity-Extension.swift"; sourceTree = "<group>"; };
+		9E731DDA210C560D0032E57C /* UIImageView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView-Extension.swift"; sourceTree = "<group>"; };
+		9E731DDC210C65560032E57C /* WikiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiDetailViewController.swift; sourceTree = "<group>"; };
+		9E731DDE210C86CE0032E57C /* MTDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDataManager.swift; sourceTree = "<group>"; };
+		A50DF4C37C09ACF39C7C1C58 /* Pods_Wikipedia_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wikipedia_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C7507048EDA3797591D23C /* Pods-Wikipedia App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wikipedia App/Pods-Wikipedia App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E731D9F210B06F40032E57C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD4A178BDD6827269B3AC5C7 /* Pods_Wikipedia_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2167F04026EDEE68E27E7DEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				356A4A9E2E998B07DF635747 /* Pods-Wikipedia App.debug.xcconfig */,
+				F4C7507048EDA3797591D23C /* Pods-Wikipedia App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E731D99210B06F40032E57C = {
+			isa = PBXGroup;
+			children = (
+				9E731DA4210B06F40032E57C /* Wikipedia App */,
+				9E731DA3210B06F40032E57C /* Products */,
+				2167F04026EDEE68E27E7DEE /* Pods */,
+				CD756A3D0412D4EF412F5580 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E731DA3210B06F40032E57C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DA2210B06F40032E57C /* Wikipedia App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E731DA4210B06F40032E57C /* Wikipedia App */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DBB210B188B0032E57C /* ViewControllers */,
+				9E731DA9210B06F40032E57C /* Main.storyboard */,
+				9E731DA5210B06F40032E57C /* AppDelegate.swift */,
+				9E731DC7210B1AE70032E57C /* GlobalConstants.swift */,
+				9E731DC0210B19FC0032E57C /* Extensions */,
+				9E731DBA210B185F0032E57C /* DataSync */,
+				9E731DB9210B184B0032E57C /* NetworkHelpers */,
+				9E731DB8210B18430032E57C /* CoreData */,
+				9E731DB7210B183D0032E57C /* Model */,
+				9E731DC9210B1AFD0032E57C /* SupportFiles */,
+				9E731DB1210B06F40032E57C /* Info.plist */,
+			);
+			path = "Wikipedia App";
+			sourceTree = "<group>";
+		};
+		9E731DB7210B183D0032E57C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DCA210B287E0032E57C /* MTSearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E731DB8210B18430032E57C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DC5210B1AB50032E57C /* MTCoreDataManager.swift */,
+				9E731DCE210B32930032E57C /* MTModel.xcdatamodeld */,
+				9E731DD8210B49490032E57C /* MTWikiSearchResultEntity-Extension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9E731DB9210B184B0032E57C /* NetworkHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DBE210B197C0032E57C /* MTNetworkHelper.swift */,
+			);
+			path = NetworkHelpers;
+			sourceTree = "<group>";
+		};
+		9E731DBA210B185F0032E57C /* DataSync */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DCC210B29010032E57C /* MTSyncEngine.swift */,
+				9E731DDE210C86CE0032E57C /* MTDataManager.swift */,
+			);
+			path = DataSync;
+			sourceTree = "<group>";
+		};
+		9E731DBB210B188B0032E57C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DBC210B18B70032E57C /* WikiSearchTableViewController.swift */,
+				9E731DD3210B41990032E57C /* MTBaseTableViewController.swift */,
+				9E731DDC210C65560032E57C /* WikiDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E731DC0210B19FC0032E57C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DC1210B1A300032E57C /* UIView-Extension.swift */,
+				9E731DC3210B1A8D0032E57C /* UIViewController-Extension.swift */,
+				9E731DD1210B35500032E57C /* UIApplication-Extension.swift */,
+				9E731DD6210B48EB0032E57C /* NSManagedObjectContext-Extension.swift */,
+				9E731DDA210C560D0032E57C /* UIImageView-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9E731DC9210B1AFD0032E57C /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9E731DAE210B06F40032E57C /* LaunchScreen.storyboard */,
+				9E731DAC210B06F40032E57C /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CD756A3D0412D4EF412F5580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50DF4C37C09ACF39C7C1C58 /* Pods_Wikipedia_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E731DA1210B06F40032E57C /* Wikipedia App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E731DB4210B06F40032E57C /* Build configuration list for PBXNativeTarget "Wikipedia App" */;
+			buildPhases = (
+				CC620554DDDA0D4F0D832FE2 /* [CP] Check Pods Manifest.lock */,
+				9E731D9E210B06F40032E57C /* Sources */,
+				9E731D9F210B06F40032E57C /* Frameworks */,
+				9E731DA0210B06F40032E57C /* Resources */,
+				E7A7F068F3F6FC2A817227F6 /* [CP] Embed Pods Frameworks */,
+				DA228FF4130C6BD77EFFCCF3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wikipedia App";
+			productName = "Wikipedia App";
+			productReference = 9E731DA2210B06F40032E57C /* Wikipedia App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E731D9A210B06F40032E57C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Anil Kumar";
+				TargetAttributes = {
+					9E731DA1210B06F40032E57C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9E731D9D210B06F40032E57C /* Build configuration list for PBXProject "Wikipedia App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E731D99210B06F40032E57C;
+			productRefGroup = 9E731DA3210B06F40032E57C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E731DA1210B06F40032E57C /* Wikipedia App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E731DA0210B06F40032E57C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E731DD5210B42E70032E57C /* Info.plist in Resources */,
+				9E731DB0210B06F40032E57C /* LaunchScreen.storyboard in Resources */,
+				9E731DAD210B06F40032E57C /* Assets.xcassets in Resources */,
+				9E731DAB210B06F40032E57C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC620554DDDA0D4F0D832FE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wikipedia App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA228FF4130C6BD77EFFCCF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wikipedia App/Pods-Wikipedia App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A7F068F3F6FC2A817227F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wikipedia App/Pods-Wikipedia App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wikipedia App/Pods-Wikipedia App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E731D9E210B06F40032E57C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E731DD9210B49490032E57C /* MTWikiSearchResultEntity-Extension.swift in Sources */,
+				9E731DC2210B1A300032E57C /* UIView-Extension.swift in Sources */,
+				9E731DD4210B41990032E57C /* MTBaseTableViewController.swift in Sources */,
+				9E731DDB210C560D0032E57C /* UIImageView-Extension.swift in Sources */,
+				9E731DBF210B197C0032E57C /* MTNetworkHelper.swift in Sources */,
+				9E731DD7210B48EB0032E57C /* NSManagedObjectContext-Extension.swift in Sources */,
+				9E731DDF210C86CE0032E57C /* MTDataManager.swift in Sources */,
+				9E731DC4210B1A8D0032E57C /* UIViewController-Extension.swift in Sources */,
+				9E731DC6210B1AB50032E57C /* MTCoreDataManager.swift in Sources */,
+				9E731DD0210B32930032E57C /* MTModel.xcdatamodeld in Sources */,
+				9E731DC8210B1AE70032E57C /* GlobalConstants.swift in Sources */,
+				9E731DCB210B287E0032E57C /* MTSearchResult.swift in Sources */,
+				9E731DCD210B29010032E57C /* MTSyncEngine.swift in Sources */,
+				9E731DA6210B06F40032E57C /* AppDelegate.swift in Sources */,
+				9E731DBD210B18B70032E57C /* WikiSearchTableViewController.swift in Sources */,
+				9E731DD2210B35500032E57C /* UIApplication-Extension.swift in Sources */,
+				9E731DDD210C65560032E57C /* WikiDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E731DA9210B06F40032E57C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E731DAA210B06F40032E57C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E731DAE210B06F40032E57C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E731DAF210B06F40032E57C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E731DB2210B06F40032E57C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E731DB3210B06F40032E57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E731DB5210B06F40032E57C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356A4A9E2E998B07DF635747 /* Pods-Wikipedia App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wikipedia App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wikipedia.Wikipedia-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E731DB6210B06F40032E57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C7507048EDA3797591D23C /* Pods-Wikipedia App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wikipedia App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wikipedia.Wikipedia-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E731D9D210B06F40032E57C /* Build configuration list for PBXProject "Wikipedia App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E731DB2210B06F40032E57C /* Debug */,
+				9E731DB3210B06F40032E57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E731DB4210B06F40032E57C /* Build configuration list for PBXNativeTarget "Wikipedia App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E731DB5210B06F40032E57C /* Debug */,
+				9E731DB6210B06F40032E57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E731DCE210B32930032E57C /* MTModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E731DCF210B32930032E57C /* MTModel.xcdatamodel */,
+			);
+			currentVersion = 9E731DCF210B32930032E57C /* MTModel.xcdatamodel */;
+			path = MTModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9E731D9A210B06F40032E57C /* Project object */;
+}
